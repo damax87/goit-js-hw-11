@@ -1,0 +1,111 @@
+.search-form {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    margin-bottom: 24px;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.search-form-input {
+    float: left;
+    width: 300px;
+    background: #f1f1f1;
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+.search-btn {
+   
+   
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px;
+}
+
+.load-more {
+    display: block;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px;
+    
+}
+
+.load-more.is-hidden {
+    display: none;
+}
+
+.load-more .lds-dual-ring.is-hidden {
+    display: none;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+  .lds-dual-ring:after {
+    content: "";
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #cef;
+    border-color: #cef transparent #cef transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    max-width: calc(100vw - 80px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30 px;
+}
+
+.info {
+    height: 150px;
+    overflow: hidden;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info-item {
+    text-decoration: none;
+    color: #2a2a2a;
+}

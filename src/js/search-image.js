@@ -17,18 +17,17 @@ export default class SearchImageService {
             }
             return await responce.json();    
             })
-            .then(data => {
+            .then(({ hits }) => {
        
                 this.incrementPage();
     
-                return data.hits;
+                return hits;
             })
             .catch(error => {
                 console.error(error);
             });
         }
-            
-
+    
     incrementPage() {
         this.page += 1;
     }
