@@ -4,7 +4,7 @@ export default class SearchImageService {
         this.page = 1;
     }
 
-    async fetchHits() {
+    async fetchImages() {
         const url = `https://pixabay.com/api/?key=33041546-26ac1afd8f063f5e8fcd45f42&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&page=${this.page}&per_page=40`;
 
        return await fetch(url)
@@ -17,12 +17,7 @@ export default class SearchImageService {
             }
             return await responce.json();    
             })
-            .then(({ hits }) => {
-       
-                this.incrementPage();
-    
-                return hits;
-            })
+
             .catch(error => {
                 console.error(error);
             });

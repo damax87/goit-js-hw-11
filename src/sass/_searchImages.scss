@@ -47,38 +47,12 @@
     
 }
 
-.load-more.is-hidden {
+.is-hidden {
     display: none;
 }
 
-.load-more .lds-dual-ring.is-hidden {
-    display: none;
-}
 
-.lds-dual-ring {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-  }
-  .lds-dual-ring:after {
-    content: "";
-    display: flex;
-    width: 20px;
-    height: 20px;
-    margin: 8px;
-    border-radius: 50%;
-    border: 6px solid #cef;
-    border-color: #cef transparent #cef transparent;
-    animation: lds-dual-ring 1.2s linear infinite;
-  }
-  @keyframes lds-dual-ring {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+
 
 .gallery {
     display: grid;
